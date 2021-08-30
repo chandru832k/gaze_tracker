@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>ATM</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">ATM - Welcome</a>
+  </nav>
+  <div class="container">
+  	<div class="row mt-5 justify-content-center">
+  		<div class="col-5">
+  				<div class="card" style="width: 18rem;">
+  					<h5 class="card-header text-center">Pick an option</h5>
+              <p class="card-title mt-3 pl-3">Name</p>
+              <p class="card-text pl-3" >{{ account.name }}</p>
+    					<p class="card-title mt-3 pl-3">Account Number</p>
+    					<p class="card-text pl-3" >{{ account.account_number }}</p>
+    					<p class="card-title pl-3 mt-4">Account Balance</p>
+    					<p class="card-text pl-3">${{ account.balance }}</p>
+    					<a href="go_to_withdrawal" class="btn btn-outline-danger mt-3 ml-3 mr-3">Withdrawal</a>
+    					<a href="go_to_deposit" class="btn btn-outline-primary m-3">Deposit</a>
+              <a href="exit" class="btn btn-outline-success m-3">Close</a>
+				</div>
+  		</div>
+  	</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>ATM</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">ATM - Welcome</a>
+  </nav>
+  <div class="container">
+  	<div class="row mt-5 justify-content-center">
+  		<div class="col-5">
+  				<div class="card" style="width: 18rem;">
+  					<h5 class="card-header text-center">Account credentials</h5>
+					<form method="post" action="/" class="p-3">
+    					<label>Account number</label>
+    					<input type="text" class="form-control" name="account-number">
+    					<label class="mt-4">PIN</label>
+    					<input type="number-password" class="form-control" name="pin">
+    					<button type="submit" class="btn btn-outline-primary mt-3 btn-block">Submit</button>
+              {%if error%}
+              <br/>
+              <p style="color: red">{{error}}</p>
+              {%endif%}
+					</form>
+				</div>
+  		</div>
+  	</div>
+  </div>
+</body>
+</html>

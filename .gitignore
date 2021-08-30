@@ -1,0 +1,8 @@
+__pycache__/
+*/__pycache__
+capturedData/
+checkpoint/
+dataset/
+metadata/
+processedFrames/
+app/accounts.db
